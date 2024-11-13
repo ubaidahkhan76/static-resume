@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static-Resume Builder</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+        }
+        #container{
+            border: 2px solid black;
+            margin: 50px auto;
+            border-radius: 20px;
+            background-color: whitesmoke;
+            width: 90%;
+            max-width: 800px;
+            padding: 20px;
+        }
+        #top{
+            color: white; 
+            background-color: rgb(67, 66, 66);
+            border-radius: 17px 18px 0px 0px;
+            padding-top: 40px;
+        }
+        #name{
+            text-align: center;
+        }
+        #status{
+            text-align: center;
+            margin-top: 10px;
+        }
+        #addressBar{
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            color: wheat;
+        }
+        #email, #location, #Number {
+            padding-top: 10px;
+        }
+        #email span, #location span, #Number span {
+            color: black;
+        }
+        #main{
+            background-color: ivory;
+            padding: 20px;
+        }
+        h2{
+            font-size: 1.5em;
+            color: rgb(67, 66, 66);
+            margin-bottom: 10px;
+        }
+        #summary, #experience, #education, #skills, #courses, #hobbies{
+            margin-bottom: 20px;
+        }
+        #summary p, #experience p, #education p, #skills p, #courses p, #hobbies p{
+            font-size: 1em;
+            line-height: 1.5;
+        }
+        #education span{
+            font-weight: bold;
+        }
+        #create{
+            text-align: center;
+        }
+        #create p{
+            font-size: 35px;
+            color: brown;
+        }
+        #create a{
+            color: darkcyan;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            #top {
+                padding-top: 30px;
+            }
+            #addressBar {
+                flex-direction: column;
+                text-align: center;
+            }
+            #email, #location, #Number {
+                padding-left: 0;
+                padding-top: 10px;
+            }
+            #summary p, #experience p, #education p, #skills p, #courses p, #hobbies p {
+                font-size: 1.2em;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            #top {
+                padding-top: 20px;
+            }
+            #name h1 {
+                font-size: 1.8em;
+            }
+            #status h3 {
+                font-size: 1.2em;
+            }
+            #addressBar {
+                flex-direction: column;
+            }
+            #summary p, #experience p, #education p, #skills p, #courses p, #hobbies p {
+                font-size: 1.1em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="top">
+            <div id="name">
+                <h1>Abu Ubaidah Khan</h1>
+            </div>
+            <div id="status">
+                <h3>Student</h3>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div id="addressBar">
+                <div id="email"> <span>&#9993;</span>abc@gamil.com</div><br>
+                <div id="location"><span>&#9990;</span> Karachi, Pakistan</div>
+                <div id="Number"><span>&#x260F;</span> 031-0000-0000</div>
+            </div>
+            <br>
+            <hr>
+        </div>
+        <div id="main">
+            <div id="summary">
+                <h2>Summary</h2>
+                <div id="summaryInner">
+                    <p>Motivated high school student with a track record of academic excellence. Intends to develop professional work experience utilizing excellent communication and time management skills.</p>
+                </div>
+            </div>
+            <div id="experience">
+                <h2>Experience</h2>
+                <div id="experienceInner">
+                    <p>Fresh</p>
+                </div>
+            </div>
+            <div id="education">
+                <h2>Education</h2>
+                <div id="educationInner">
+                    <p><span>Matric, Zubair Public School</span></p>
+                    <p>April-2008 to June-2020</p>
+                    <p><span>Intermediate, Govt. Degree Boys College</span></p>
+                    <p>June-2020 to September-2022</p>
+                </div>
+            </div>
+            <div id="skills">
+                <h2>Skills</h2>
+                <div id="skillsInner">
+                    <p>Html</p>
+                    <p>Css</p>
+                    <p>JavaScript</p>
+                    <p>TypeScript</p>
+                </div>
+            </div>
+            <div id="courses">
+                <h2>Courses</h2>
+                <div id="coursesInner">
+                    <p>Currently enrolled in fullstack web development</p>
+                    <p>Currently enrolled in GIAC</p>
+                </div>
+            </div>
+            <div id="hobbies">
+                <h2>Hobbies</h2>
+                <div id="hobbiesInner">
+                    <p>Chess</p>
+                    <p>Reading books</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
